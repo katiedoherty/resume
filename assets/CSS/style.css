@@ -1,5 +1,77 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+
+
+/*--------Colours*/
+.bg-color-name-title{
+    background-color: #fbe87a;
+    color:	#ec5136;
+}
+
+.bg-color-name-title .job-title{
+    color:#858988;
+}
+
+.ui-menu-color-home{
+    background-color:#ec5136
+}
+
+.ui-menu-color-projects{
+    background-color:#beda65
+}
+
+.ui-menu-color-contact{
+    background-color:#4dd7c3
+}
+
+.ui-menu-color-download{
+    background-color:#f5ac34
+}
+/*---------Heading*/
 header{
     margin:0;
+}
+
+.heading{
+    margin-left:50px;
+}
+.logo{
+    background: url("../IMAGES/download.png");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    min-height:360px;
+    transition:all .5s ease-in-out;
+    -moz-transition:all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+/*------header fonts*/
+.name{
+    font-family:"Poppins", sans-serif;
+    font-weight: 600;
+    font-size:46px;
+    margin-top:50px;
+}
+
+.title{
+    font-family:"Poppins",sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    margin-top:20px;
+    margin-bottom:90px;
+}
+
+.list-inline-item:not(:last-child){/*grabbed this class name from developer tools*/
+    margin:0;
+}
+
+.menu-container{
+    font-size:0;/*this closes up the spaces in between the list items*/
+}
+
+#nav li {
+font-size:16px;/* because of the menu-container the font size will be 0 so this css is to override thata nd make the elements visible*/
+padding:0;
 }

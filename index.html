@@ -10,12 +10,41 @@
 <title>Rosie</title>
 </head>
 <body>
+
 <header>
-<div class="row">
+<div class="row no-gutters"><!--no-gutter gets rid of boot strap padding-->
 <a href="index.html" class="col-md-4 logo">
  </a>
- <a class="col-md-8">
- </a>
+ <div class="col-md-8">
+ <div class="row no-gutters bg-color-name-title"> <!--the bg-color-name-title will be a background color-->
+ <div class="col heading"><!--the direcct child of a column row has to have a column class, class of heading so we can style it later-->
+ <h1 class="name">Katie Doherty</h1>
+ <h2 class="title job-title">Digital Marketing</h2>
+ </div>
+ </div>
+ <div class="row no-gutters">
+ <div class="col">
+ <ul id="nav" class="list-inline menu-container"><!--list-inline displays the navbar horizontally-->
+
+ <li class="col-6 col-sm-3 list-inline-item ui-menu-color-home menuitem"><!--4 elements wide when displayed in a small screen size and 2 elements when viewed on a mobile format, have to use list-inline elemenet wehn using list items in bootstrap-->
+ <a href="#"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a><!--aria-hidden hides icons from screenreaders-->
+ </li>
+
+ <li class="col-6 col-sm-3 list-inline-item ui-menu-color-projects menuitem">
+ <a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Projects</span></a>
+ </li>
+
+ <li class="col-6 col-sm-3 list-inline-item ui-menu-color-contact menuitem">
+ <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Contact</span></a>
+ </li>
+
+ <li class="col-6 col-sm-3 list-inline-item ui-menu-color-download menuitem">
+ <a href="#"><i class="fa fa-download" aria-hidden="true"></i><span>Download C.V.</span></a>
+ </li>
+ </ul>
+ </div>
+ </div>
+ </div>
 </div>
 </header>
 <section></section>
