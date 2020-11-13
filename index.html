@@ -6,6 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"/>
 <script src="https://kit.fontawesome.com/b201075f35.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css">
 <link rel="stylesheet" href="assets/CSS/style.css" type="text/css" />
 <title>Rosie</title>
 </head>
@@ -27,19 +28,19 @@
  <ul id="nav" class="list-inline menu-container"><!--list-inline displays the navbar horizontally-->
 
  <li class="col-6 col-sm-3 list-inline-item ui-menu-color-home menuitem"><!--4 elements wide when displayed in a small screen size and 2 elements when viewed on a mobile format, have to use list-inline elemenet wehn using list items in bootstrap-->
- <a href="#"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a><!--aria-hidden hides icons from screenreaders-->
+ <a href="#" class="hvr-sweep-to-bottom red"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a><!--aria-hidden hides icons from screenreaders-->
  </li>
 
  <li class="col-6 col-sm-3 list-inline-item ui-menu-color-projects menuitem">
- <a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Projects</span></a>
+ <a href="#" class="hvr-sweep-to-bottom green"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Projects</span></a>
  </li>
 
  <li class="col-6 col-sm-3 list-inline-item ui-menu-color-contact menuitem">
- <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Contact</span></a>
+ <a href="#" class="hvr-sweep-to-bottom blue"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Contact</span></a>
  </li>
 
  <li class="col-6 col-sm-3 list-inline-item ui-menu-color-download menuitem">
- <a href="#"><i class="fa fa-download" aria-hidden="true"></i><span>Download C.V.</span></a>
+ <a href="#" class="hvr-sweep-to-bottom orange"><i class="fa fa-download" aria-hidden="true"></i><span>Download C.V.</span></a>
  </li>
  </ul>
  </div>
@@ -47,7 +48,47 @@
  </div>
 </div>
 </header>
-<section></section>
-<footer></footer>
+<section>
+
+</section>
+<footer class="container-fluid">
+<div class="row">
+<div class="col-sm-4">
+<h5 class="uppercase general-sub">About</h5>
+<p class="inline-block">
+A Marketing Graduate who is interning at The Marketing Institute of Ireland and studying software development part-time with Code Institute.
+I am currently seeking a digital marketing position.
+</p>
+</div>
+<div class="col-sm-4">
+<h5 class="uppercase general-sub">Download</h5>
+<p class="inline-block">
+Need a printable version of my C.V. download it here.
+<a href="#" target="_blank" class="cv-pdf">
+<i class="fa fa-download" aria-hidden="true"></i>
+<span class="sr-only">Download Link.</span></a>
+</p>
+</div>
+<div class="col-sm-4">
+<h5 class="uppercase general-sub">Social</h5>
+<ul class="list-inline social-links">
+
+<li class="list-inline-item">
+<a target="_blank" href="#">
+<i class="fa fa-linkedin"></i>
+<span class="sr-only">LinkedIn</span>
+</a>
+</li>
+
+<li class="list-inline-item">
+<a target="_blank" href="#">
+<i class="fa fa-twitter"></i>
+<span class="sr-only">Twitter</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</footer>
 </body>
 </html>

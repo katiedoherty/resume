@@ -19,7 +19,7 @@
 }
 
 .ui-menu-color-projects{
-    background-color:#beda65
+    background-color:#1fca5b;
 }
 
 .ui-menu-color-contact{
@@ -29,6 +29,26 @@
 .ui-menu-color-download{
     background-color:#f5ac34
 }
+
+/*--------------special paddings/margins/text*/
+h1, h2, h3, h4{
+    margin:0;
+}
+
+.uppercase{
+    text-transform:uppercase;
+}
+
+.general-sub{
+    font-family:"Poppins", sans-serif;
+    font-weight:100;
+    color:#ec5136;
+}
+
+.inline-block{
+    display:inline-block;
+}
+
 /*---------Heading*/
 header{
     margin:0;
@@ -60,7 +80,7 @@ header{
     font-weight: 500;
     font-size: 28px;
     margin-top:20px;
-    margin-bottom:90px;
+    margin-bottom:80px;
 }
 
 .list-inline-item:not(:last-child){/*grabbed this class name from developer tools*/
@@ -71,7 +91,71 @@ header{
     font-size:0;/*this closes up the spaces in between the list items*/
 }
 
+#nav{
+    margin:0;
+}
 #nav li {
 font-size:16px;/* because of the menu-container the font size will be 0 so this css is to override thata nd make the elements visible*/
 padding:0;
+}
+
+.menuitem{
+    height:120px;
+    text-align:center;
+    padding:0;
+}
+
+.menuitem a{
+    font-family:"Poppins", sans-serif;
+    width:100%;
+    text-decoration:none;/*gets rid of the underline in the link*/
+    color:#fbe87a;
+    height:120px;
+}
+
+.menuitem a i {
+    padding-top:20px;
+    display:block;
+    color:#fbe87a;
+    font-size:26px;
+}
+
+.menuitem span{
+    display:block;
+    width:100%;
+    padding-top:5px;
+    text-align:center;
+    text-transform:uppercase;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:2px;
+}
+
+/*hover.css*/
+.hvr-sweep-to-bottom:before {/*said before cause in developer tools that is the name of the class*/
+background:rgb(0, 0, 0, 0.2);
+height:120px;/*keeps it in line with the other elements*/
+}
+
+/*----------------footer*/
+footer{
+    background-color:#fbe87a;
+    color:#ec5136;
+    min-height:120px;
+    margin:0;
+}
+
+.cv-pdf i{
+font-size:18px;
+color:#ec5136;
+text-align:center;
+padding-left:5px;
+transform:all 0.35s ease-in-out;
+-moz-transform:all 0.35s ease-in-out;
+-webkit-transform:all 0.35s ease-in-out;
+-o-transform:all 0.35s ease-in-out;
+}
+
+.cv-pdf i:hover{
+    color:#4dd7c3;
 }
