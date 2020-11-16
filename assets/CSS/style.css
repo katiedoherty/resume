@@ -10,9 +10,6 @@
     color:	#ec5136;
 }
 
-.bg-color-three-reasons{
-background-color:#4dd7c3;
-}
 
 .bg-color-name-title .job-title{
     color:#858988;
@@ -23,11 +20,11 @@ background-color:#4dd7c3;
 }
 
 .ui-menu-color-projects{
-    background-color:#1fca5b;
+    background-color:#4dd7c3;
 }
 
 .ui-menu-color-contact{
-    background-color:#4dd7c3
+    background-color:#1fca5b;
 }
 
 .ui-menu-color-download{
@@ -68,7 +65,7 @@ display:table;
     font-weight:600;
     margin-top:25px;
     margin-bottom:40px;
-    color:white;
+    color:#ec5136;
 }
 /*---------Heading*/
 header{
@@ -209,4 +206,56 @@ transform:all 0.35s ease-in-out;
 
 #footer-details{
 padding: 20px 0px 20px 0px;
+}
+/*three reasons*/
+p{
+    color:#595959;
+    font-family: "Poppins", sans-serif;
+}
+.three-reasons-heading{
+    color:#595959;
+    margin-bottom:15px;
+    font-family: "Poppins", sans-serif;
+}
+.three-reasons-icon{
+    color:#ec5136;
+    font-size:26px;
+}
+
+/* personal info*/
+.bg-color-personal-info{
+    background-color:rgb(0, 181, 204, .4);
+}
+
+.personal-info-item{
+    margin-bottom:20px;
+    display:block;/*occupies horizontal space*/
+    clear:both;/*no other items can appear beside them*/
+}
+
+.personal-info-item .key,
+.personal-info-item .value{
+    padding-right:8px;
+    display:inline-block;/*allow two divs beside eachother*/
+}
+
+.personal-info-item .key p,
+.personal-info-item .value p{
+    margin:0;
+}
+
+.personal-info-item .key{
+    width:30%;
+    margin-right:21px;
+    padding-top:2px;
+    vertical-align:top;
+}
+
+.personal-info-item .key p{
+    font-weight:700;
+}
+
+.personal-info-item .value{
+    width:60%;
+    position:relative;/*want it to be relative to its predeccesor*/
 }
