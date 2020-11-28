@@ -35,6 +35,11 @@
     background-color:#4dd7c3;
 }
 
+.bg-color-contact{
+    background-color:white;
+    font-family: "Poppins", sans-serif;
+}
+
 /*--------------special paddings/margins/text*/
 h1, h2, h3, h4{
     margin:0;
@@ -290,12 +295,73 @@ background-color:rgba(25, 25, 25, 0.2);
 .timeline-item{
     padding:4em 2em 0em 2em; 
     position:relative;/* this is because we are going to have some absolute children*/
-    color:#ec5136;
+    color:#595959;
     border-left:1px solid;
 }
 
 .timeline-item p{
+    color:#595959;
     padding:0;
     margin:0;
 }
 
+.timeline-item:before {/*targets our data dates attribute*/
+content:attr(data-dates);
+position:absolute;
+left:2.5em;
+top:3em;/*this brings it abover our employers text*/
+display:block;
+font-family:"Poppins", sans-serif;
+font-weight:900;
+font-size:0.8em;
+margin:0;
+}
+
+.timeline-item:after{
+    /*creates a disk or node to represent rosies history*/
+    width:12px;
+    height:12px;/*gives us a square*/
+    display:block;
+    top:2.4em;
+    position:absolute;
+    left:-6px;
+    border-radius:12px;/*this makes it a circle we can set it to the height or width of the square or 50%*/
+    content:'';/*deosnt allow anything to appear in there*/
+    background-color:#595959;
+}
+
+.history-items{
+    margin-bottom:30px;/*so it always pushes it out no matter the device*/
+}
+
+/*----------------------------contact form*/
+.contact-heading{
+    font-family:"Poppins", sans-serif;
+    font-weight:300;
+    margin-top:25px;
+    margin-bottom:20px;
+}
+
+.center-form{
+    padding-top:10px;
+    margin:0 auto;/*the auto is how we center content*/
+    max-width:70%;
+}
+
+button[type="submit"]{
+    /*this shows you can target a element with a particular attribute*/
+    margin:15px;
+    margin-bottom:20px;
+    color:white;
+    background-color:#ec5136;
+}
+
+/*-----------------------Media Queries*/
+@media(min-width:992px){
+    .center-form{
+    padding-top:30px;
+    min-height:240px;
+    margin:0 auto;/*the auto is how we center content*/
+    max-width:50%;
+}
+}
