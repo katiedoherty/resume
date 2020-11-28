@@ -31,6 +31,10 @@
     background-color:#f5ac34
 }
 
+.bg-color-work-history {
+    background-color:#4dd7c3;
+}
+
 /*--------------special paddings/margins/text*/
 h1, h2, h3, h4{
     margin:0;
@@ -281,3 +285,17 @@ background-color:rgba(25, 25, 25, 0.2);
 .progress-section{
     margin:40px 20px;
 }
+
+/* Work History*/
+.timeline-item{
+    padding:4em 2em 0em 2em; 
+    position:relative;/* this is because we are going to have some absolute children*/
+    color:#ec5136;
+    border-left:1px solid;
+}
+
+.timeline-item p{
+    padding:0;
+    margin:0;
+}
+
