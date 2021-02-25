@@ -9,6 +9,20 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css">
 <link rel="stylesheet" href="assets/CSS/style.css" type="text/css" />
 <title>Rosie</title>
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_EjpiDm61l7FMHhapUcLHk");
+      var templateParams = {
+    name: 'James',
+    notes: 'Check this out!'
+};
+      emailjs.send(service_6wq26xl, template_5uaz7c5, templateParams, user_EjpiDm61l7FMHhapUcLHk);
+   })();
+</script>
 </head>
 <body>
 
@@ -112,4 +126,5 @@ Need a printable version of my C.V. download it here.
 </div>
 </footer>
 </body>
+
 </html>
